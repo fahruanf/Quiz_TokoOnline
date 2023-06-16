@@ -5,12 +5,12 @@
 
     <div align="center">
         <a href="{{ route('products.create') }}" class="btn btn-success mb-3">Tambah Produk</a>
-        <a href="{{ route('products.index') }}" class="btn btn-primary mb-3">Semua Produk</a>
+        <a href="{{ route('products.index') }}" class="btn btn-primary mb-3">Semua Data Produk</a>
         <a href="{{ route('products.available') }}" class="btn btn-primary mb-3">Available Stock</a>
         <a href="{{ route('products.unavailable') }}" class="btn btn-primary mb-3">Unavailable Stock</a>
     </div>
 
-    <table class="table">
+    <table class="table table-primary table-striped">
         <thead>
             <tr>
                 <th>ID</th>
