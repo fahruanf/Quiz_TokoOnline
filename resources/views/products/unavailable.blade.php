@@ -1,7 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Unavailable Stock</h1>
+    <h1 align="center">Unavailable Stock</h1>
+
+    <div align="center">
+        <a href="{{ route('products.create') }}" class="btn btn-success mb-3">Tambah Produk</a>
+        <a href="{{ route('products.index') }}" class="btn btn-primary mb-3">Semua Produk</a>
+        <a href="{{ route('products.available') }}" class="btn btn-primary mb-3">Available Stock</a>
+        <a href="{{ route('products.unavailable') }}" class="btn btn-primary mb-3">Unavailable Stock</a>
+    </div>
 
     <table class="table">
         <thead>
@@ -23,6 +30,4 @@
             @endforeach
         </tbody>
     </table>
-
-    <a href="{{ route('products.index') }}" class="btn btn-secondary mt-3">Kembali</a>
 @endsection

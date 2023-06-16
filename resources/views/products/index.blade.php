@@ -8,9 +8,10 @@
     @endif
 
     <div align="center">
-        <a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Tambah Produk</a>
-        <a href="{{ route('products.available') }}" class="btn btn-success mb-3">Available Stock</a>
-        <a href="{{ route('products.unavailable') }}" class="btn btn-danger mb-3">Unavailable Stock</a>
+        <a href="{{ route('products.create') }}" class="btn btn-success mb-3">Tambah Produk</a>
+        <a href="{{ route('products.index') }}" class="btn btn-primary mb-3">Semua Produk</a>
+        <a href="{{ route('products.available') }}" class="btn btn-primary mb-3">Available Stock</a>
+        <a href="{{ route('products.unavailable') }}" class="btn btn-primary mb-3">Unavailable Stock</a>
     </div>
 
     <table class="table">
@@ -32,7 +33,7 @@
                     <td>{{ $product->stock }}</td>
                     <td>
                         <a href="{{ route('products.show', $product->id) }}" class="btn btn-info btn-sm">Detail</a>
-                        <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary btn-sm">Ubah</a>
+                        <a href="{{ route('products.edit', $product->id) }}" class="btn btn-primary btn-sm">Edit</a>
                         <a href="{{ route('products.updateStockForm', ['id' => $product->id]) }}" class="btn btn-success btn-sm">Kelola Stok</a>
                         <form action="{{ route('products.destroy', $product->id) }}" method="POST" class="d-inline">
                             @csrf
