@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
         DB::table('products')->insert([
             [
                 'name' => 'Sepatu Sneakers',
-                'price' => 500000,
-                'stock' => 10,
+                'price' => '500000',
+                'stock' => '10',
             ]
         ]);
     }
