@@ -11,7 +11,7 @@
     </div>
 
     <table class="table table-primary table-striped">
-        <thead>
+        <thead align="center">
             <tr>
                 <th>ID</th>
                 <th>Nama</th>
@@ -19,7 +19,7 @@
                 <th>Stock</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody align="center">
             @foreach($availableProducts as $product)
                 <tr>
                     <td>{{ $product->id }}</td>

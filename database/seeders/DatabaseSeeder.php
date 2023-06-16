@@ -10,6 +10,8 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+     *
+     * @return void
      */
     public function run(): void
     {
@@ -17,7 +19,7 @@ class DatabaseSeeder extends Seeder
             [
                 'name' => 'Sepatu Sneakers',
                 'price' => '500000',
-                'stock' => '10',
+                'stock' => '10'
             ]
         ]);
     }
